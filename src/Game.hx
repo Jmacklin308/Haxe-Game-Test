@@ -18,6 +18,10 @@ class Game extends Process {
 		ca.setLeftDeadZone(0.2);
 		ca.setRightDeadZone(0.2);
 		createRootInLayers(Main.ME.root, Const.DP_BG);
+		
+		
+		//add new "hero" character
+		new en.Hero(5,5);
 
 		scroller = new h2d.Layers();
 		root.add(scroller, Const.DP_BG);
